@@ -1,0 +1,11 @@
+.DS_Store
+*.log
+node_modules
+dist
+build
+.idea
+report
+coverage
+npm-debug*
+.vscode
+
