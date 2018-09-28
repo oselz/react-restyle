@@ -233,9 +233,9 @@ Passed to child components to override styling.
 
 **Parameters**
 
-*`classMap` A class map for re-styling css classes
-*`styleMap` A style map for defining inline-styles
-*`compose` A restyle prop inherited from a higher component
+* `classMap` A class map for re-styling css classes
+* `styleMap` A style map for defining inline-styles
+* `compose` A restyle prop inherited from a higher component
 
 **Example object:**
 
