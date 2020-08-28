@@ -1,11 +1,7 @@
 {
-  "name": "react-restyle",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Simple composable styling for React components",
   "license": "MIT",
-  "main": "dist/react-restyle.cjs.js",
-  "module": "dist/react-restyle.esm.js",
-  "browser": "dist/react-restyle.umd.js",
   "keywords": [
     "react",
     "style",
@@ -20,34 +16,48 @@
     "type": "git",
     "url": "https://github.com/oselnz/react-restyle"
   },
-  "author": {
-    "email": "daniel@osel.nz",
-    "name": "Daniel Brownlees"
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
   },
   "scripts": {
-    "build": "rollup -c",
-    "lint": "eslint src/*.js test/*.js",
-    "pretest": "npm run build",
-    "test": "jest",
-    "size": "size-limit",
-    "prepublish": "npm run build"
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build"
   },
-  "files": [
-    "dist"
-  ],
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "tabWidth": 4
+  },
+  "name": "react-restyle",
+  "author": "Daniel Brownlees",
+  "module": "dist/react-restyle.esm.js",
   "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^23.4.2",
-    "eslint": "^5.5.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^7.0.1",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "jest": "^23.5.0",
-    "rollup": "^0.65.2",
-    "size-limit": "^0.20.0"
+    "@types/react": "^16.9.48",
+    "@types/react-dom": "^16.9.8",
+    "husky": "^4.2.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "tsdx": "^0.13.3",
+    "tslib": "^2.0.1",
+    "typescript": "^4.0.2"
   }
 }

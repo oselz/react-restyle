@@ -1,0 +1,66 @@
+.flex-col {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.padding {
+    padding: 2em !important;
+}
+
+.padding-sm {
+    padding: 0.5em;
+}
+
+.margin-sm {
+    margin: 1em;
+}
+
+.caps {
+    text-transform: uppercase;
+}
+
+.sans {
+    font-family: sans-serif;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.white {
+    color: white;
+}
+
+.bg-red {
+    background-color: red !important;
+}
+
+.bg-blue {
+    background-color: dodgerblue;
+}
+
+.bg-grey {
+    background-color: #f5f6f7 !important;
+}
+
+.bg-white {
+    background: white !important;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.border {
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+}
+
+.large {
+    font-size: 1.5em;
+}
